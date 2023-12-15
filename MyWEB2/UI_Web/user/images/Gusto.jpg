@@ -1,0 +1,114 @@
+public static void Main(String[] args)
+{
+	string name=new string[8];
+	name[]={Book,Soap,Pen,Ruler,Tissue,Cup Cake,Coke,100Plus};
+	string[] code={gng001,gng002,gng003,gng004,gng005,gng006,gng007,gng008};
+	int[] price={500,700,200,300,1600,850,700,500};
+	int[] qty={50,16,50,37,30,9,50,49};
+	Console.WriteLine("Items List in store!");
+	Console.WriteLine("---------------------------------------------");
+	Console.WriteLien("No.      Code      Name    Price   Qty    ");
+	Console.WriteLine("---------------------------------------------");
+	for(int i=0;i<8;i++)
+	{
+		Console.WriteLine(j+1 +code[j] + name[j] +price[j]+qty[j]);
+	}
+
+
+	int[] qty=new qty[100];
+	int[] qua=new qua[100];
+	string[] code=new code[10];
+	Console.WriteLine("-----------------------------------------------------");
+	Console.WriteLine("             Item Checkout Process!");
+	Console.WriteLine("-----------------------------------------------------");
+	Console.WriteLine("Enter number of items:");
+	int item=Console.ReadLine();
+	for(int x;x<item;x++)
+	{
+			 Console.WriteLine("Enter code:");
+			 code[x]=Console.ReadLine();
+			 Console.WriteLine("Enter quantity:);
+	    	 string qty[x]=Console.ReadLine();
+	    	 int qua[x]=int.Parse(qty[x]);
+	}
+
+	//Total
+
+	int totalamount=0;
+	int subtotal=1;
+	Console.WriteLine("                   g&g Company");
+	Console.WriteLine("---------------------------------------------------");
+	Console.WriteLine("No.      Code        Name    Price  Qty   Sub Total");
+	Console.WriteLine("---------------------------------------------------");
+	for(int a=0;a<item;a++)
+	{
+
+
+
+
+
+		Console.WriteLine(a++ + code[a]+ name[a]+"   "+price[a]+"  "+qua[a]);
+
+
+
+	}
+
+
+
+
+
+
+		Console.WriteLine("-----------------------------------------------");
+		Console.WriteLine("                Search part!");
+		Console.WriteLine("-----------------------------------------------");
+		Console.WriteLine("How do you want to search it?(Code or Quantity)");
+		string search=Console.ReadLine();
+		int s=int.Parse(search);
+		if(s="Code")
+		{
+			Console.WriteLine("Enter code:");
+			string bb=Console.ReadLine();
+			//int cc=int.Parse(bb);
+			for(int g=0;g<8;g++)
+			{
+				if(bb=="code[g]")
+				{
+					Console.WriteLine("----------------------");
+					Console.WriteLine("No.  Code. Name. Price  Qty ");
+					Console.WriteLine("----------------------"); 
+					Console.WriteLine(code[g]+" "+name[g]+" "+price[g]+     " "+qty[g]);
+					g=8;
+				}
+			    else if(s="qty[g]")
+			    {
+					Console.WriteLine("----------------------");
+					Console.WriteLine("No.  Code. Name. Price  Qty ");
+					Console.WriteLine("----------------------"); 
+					Console.WriteLine(code[g]+" "+name[g]+" "+price[g]+     " "+qty[g]);
+					g=8;
+			   }else
+			    {
+				Console.WriteLine("Invalid input!");
+			    }
+		}
+
+
+
+
+
+
+		int tax=0;
+		tax=(int) (taxamount*0.005);
+		int net=0;
+		Console.WriteLine("Total amount="+totalamount);
+		if(totalamount>=10000)
+		{
+			Console.WriteLine("Discount amount is:"+tax);
+			Console.WriteLine("Net pay is:"+totalamount);
+		}
+		else
+		{
+			Console.WriteLine("No discount amount!");
+			Console.WriteLine("Net pay is:"+(totalamount-tax));
+		}
+}
